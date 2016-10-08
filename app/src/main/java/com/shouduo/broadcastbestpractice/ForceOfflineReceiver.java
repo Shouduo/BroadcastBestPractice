@@ -1,10 +1,10 @@
 package com.shouduo.broadcastbestpractice;
 
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.view.WindowManager;
 
 
@@ -31,7 +31,7 @@ public class ForceOfflineReceiver extends BroadcastReceiver {
             }
         });
         AlertDialog alertDialog = dialogBuilder.create();
-        alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+        alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);
         alertDialog.show();
     }
 
