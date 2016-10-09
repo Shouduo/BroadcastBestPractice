@@ -20,7 +20,6 @@ public class ForceOfflineReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
 
         System.out.println("接受广播");
-//        AlertDialog alertDialog = new AlertDialog(context, alertDialogTheme);
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context, Theme_AppCompat_DayNight_Dialog)
                 .setTitle("Warning")
                 .setMessage("You are forced to be offline. Please try to login again.")
